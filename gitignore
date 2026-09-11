@@ -1,0 +1,17 @@
+# Build artifacts
+build/
+*.o
+*.log
+
+# Captures (can be large; keep small extracted samples instead)
+*.pcap
+*.pcapng
+!samples/*.pcapng
+
+# Secrets — never commit real subscriber keys
+**/*subscriber*secret*
+*.key
+
+# OS/editor cruft
+.DS_Store
+*.swp
